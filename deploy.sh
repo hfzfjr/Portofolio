@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 set -a
 source .env.local
 set +a
@@ -10,7 +11,7 @@ docker build \
   -f Dockerfile \
   -t portofolio-app .
 
-docker rm -f portofolio-server
+docker rm -f portofolio-server || true
 
 docker run -d \
   --name portofolio-server \
