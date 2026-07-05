@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Halo, saya Hafiz Fajar",
+    "subtitle": "Mahasiswa Informatika Telkom University",
+    "description": "Fokus pada pengembangan web modern dengan Next.js, Spring Boot, dan Flutter"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "contact": "Kontak"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "description": "Saya adalah mahasiswa Informatika di Telkom University dengan minat kuat dalam pengembangan web dan aplikasi mobile. Saya berfokus pada teknologi modern seperti Next.js, Spring Boot, dan Flutter untuk menciptakan solusi digital yang berkualitas."
+  },
+  "projects": {
+    "title": "Proyek",
+    "description": "Beberapa proyek yang telah saya kerjakan",
+    "comingSoon": "Proyek akan segera ditambahkan"
+  },
+  "contact": {
+    "title": "Kontak",
+    "description": "Hubungi saya atau tinggalkan pesan",
+    "form": {
+      "name": "Nama",
+      "message": "Pesan",
+      "submit": "Kirim",
+      "success": "Pesan berhasil dikirim!",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "namePlaceholder": "Masukkan nama Anda",
+      "messagePlaceholder": "Tulis pesan Anda di sini...",
+      "validation": {
+        "nameRequired": "Nama wajib diisi",
+        "messageRequired": "Pesan wajib diisi",
+        "messageTooLong": "Pesan terlalu panjang (maksimal 500 karakter)"
+      }
+    },
+    "comments": {
+      "title": "Komentar Terbaru",
+      "noComments": "Belum ada komentar. Jadilah yang pertama!",
+      "timeAgo": "{{time}} yang lalu"
+    }
+  }
+}
