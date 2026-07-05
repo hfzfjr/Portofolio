@@ -1,0 +1,11 @@
+# Optional cloudflared config file
+# If you prefer using a config file instead of tunnel token, uncomment and configure below
+# Then remove TUNNEL_TOKEN from docker-compose.yml and use: command: tunnel --config /config.yml run
+
+# tunnel: <your-tunnel-id>
+# credentials-file: /config/<your-tunnel-cert>.json
+
+# ingress:
+#   - hostname: hafizfajar.com
+#     service: http://app:3000
+#   - service: http_status:404
