@@ -44,12 +44,17 @@ function formatTimeAgo(date: Date): string {
 }
 
 export default async function CommentList({ lang }: CommentListProps) {
-  const comments = await prisma.comment.findMany({
-    orderBy: {
-      createdAt: 'desc',
-    },
-    take: 50,
-  });
+  let comments: Comment[] = [];
+  try {
+    comments = await prisma.comment.findMany({
+      orderBy: {
+        createdAt: 'desc',
+      },
+      take: 50,
+    });
+  } catch (error) {
+    console.error('Failed to fetch comments:', error);
+  }
 
   if (comments.length === 0) {
     return (

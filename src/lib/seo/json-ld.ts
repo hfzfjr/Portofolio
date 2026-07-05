@@ -10,9 +10,9 @@ export function generateJsonLd() {
         jobTitle: 'Informatics Student',
         url: baseUrl,
         sameAs: [
-          // Add your LinkedIn and GitHub URLs here
-          // 'https://linkedin.com/in/yourusername',
-          // 'https://github.com/yourusername',
+          'https://www.linkedin.com/in/hafiz-fajar-ramadhan-4290b2292/',
+          'https://github.com/hfzfjr',
+          'https://www.instagram.com/hafizfajarr/'
         ],
       },
       {

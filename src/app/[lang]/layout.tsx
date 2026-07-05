@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { type Locale, locales, defaultLocale } from "@/lib/i18n/config";
 import Navbar from "@/components/layout/Navbar";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { generateJsonLd } from "@/lib/seo/json-ld";
 
 export async function generateMetadata({
   params,
@@ -44,9 +45,15 @@ export default async function LocaleLayout({
   const { lang } = await params;
 
   return (
-    <div className="flex flex-col flex-1">
-      <Navbar lang={lang as Locale} />
-      {children}
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateJsonLd() }}
+      />
+      <div className="flex flex-col flex-1">
+        <Navbar lang={lang as Locale} />
+        {children}
+      </div>
+    </>
   );
 }
